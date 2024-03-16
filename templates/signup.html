@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/status-bar.css" />
+    <link rel="stylesheet" href="../static/css/alt-header.css" />
+    <link rel="stylesheet" href="../static/css/submit_btn.css" />
+    <link
+      rel="stylesheet"
+      href="/Users/yunmacbook/Desktop/Buddodum/static/css/screens/signup.css"
+    />
+  </head>
+  <body>
+    <!-- 상단 status-bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <!-- 상단 header -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="#">
+          <i class="fas fa-arrow-left fa-lg" style="color: black"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <img src="../static/assets/logo_simple.svg" />
+      </div>
+    </header>
+    <main>
+      <!-- [TODO] 폼 제출 post 연결 -->
+      <form action="" method="post" onsubmit="return validateForm()">
+        <div class="customerInput">
+          <label for="id"><span>아이디</span><span>*</span></label
+          ><br />
+          <div id="idContent">
+            <input
+              type="text"
+              id="id"
+              name="id"
+              required
+              placeholder="아이디를 입력해주세요"
+            />
+            <button id="checkIdBtn" type="button" onclick="checkDuplicate()">
+              중복 확인
+            </button>
+          </div>
+          <div class="check-comment" id="check-id">*아이디 중복확인</div>
+
+          <label for="password"><span>비밀번호</span><span>*</span></label
+          ><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="비밀번호를 10자 이상 입력해주세요"
+          />
+          <div class="check-comment" id="check-pw">*10자 이상 입력</div>
+
+          <label for="confirmPassword"
+            ><span>비밀번호 확인</span><span>*</span></label
+          ><br />
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+            placeholder="비밀번호를 한번 더 입력해주세요"
+          />
+          <div class="check-comment" id="check-pw-re">*비밀번호 재입력</div>
+
+          <label for="email"><span>이메일</span><span>*</span></label
+          ><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="ewhamarket@ewha.com"
+          />
+          <div class="check-comment" id="check-email">
+            이메일 형식에 맞게 써주세요
+          </div>
+
+          <label for="phone">핸드폰 번호</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="'-' 없이 숫자만 입력하세요"
+          />
+        </div>
+
+        <input
+          type="hidden"
+          id="duplicateCheck"
+          name="duplicateCheck"
+          value=""
+        />
+
+        <input id="submitBtn" type="submit" value="가입 완료하기" />
+      </form>
+    </main>
+    <script src="../static/js/sign_up.js"></script>
+  </body>
+</html>
