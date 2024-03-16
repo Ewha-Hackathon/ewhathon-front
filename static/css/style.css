@@ -114,8 +114,13 @@ nav > div {
   border-color: var(--color-yellow);
   border-radius: 2rem;
   font-size: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+.tag-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ====================버튼=====================*/
