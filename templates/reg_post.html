@@ -1,36 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post-detail</title>
+    <title>new post</title>
+
     <link
       rel="stylesheet"
       href="/Users/yunmacbook/Desktop/Buddodum/static/css/style.css"
     />
-    <link
-      rel="stylesheet"
-      href="/Users/yunmacbook/Desktop/Buddodum/static/css/screens/home.css"
-    />
+    <link rel="stylesheet" href="../static/css/alt-header.css" />
+    <link rel="stylesheet" href="../static/css/submit_btn.css" />
+    <link rel="stylesheet" href="../static/css/screens/reg_posts.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="/Users/yunmacbook/Desktop/Buddodum/static/css/alt-header.css"
-    />
   </head>
   <body>
+    <!-- 상단 header -->
     <header class="alt-header">
       <div class="alt-header__column">
         <a href="#">
-          <i class="fas fa-arrow-left fa-lg" style="color: black"></i>
+          <i class="fas fa-arrow-left fa-lg" style="color: var(--color-bg)"></i>
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">상품 등록하기</h1>
+        <h1 class="alt-header__title">새로운 벗돋움</h1>
       </div>
     </header>
+
+    <main>
+      <form action="" method="post" onsubmit="return validateForm()">
+       
+        <label for="productName">상품 이름</label>
+        <input
+          type="text"
+          id="productName"
+          name="productName"
+          required
+        /><br /><br />
+
+        <label for="sellerId">주최</label>
+        <!-- [TODO] 로그인 정보에서 가져올 수 있도록 하기 -->
+        <input type="text" id="sellerId" name="sellerId" required /><br /><br />
+
+
+        <label for="productImage"></label>
+        <input
+          type="file"
+          id="productImage"
+          name="productImage"
+          accept=".jpg, .png"
+          onchange="checkFile()"
+          required
+        />
+        <div id="imageWrapper" onclick="uploadImage()">
+          <img id="defaultIcon" src="../static/assets/camera.svg" />
+          <img id="imagePreview" />
+        </div>
+        <br /><br />
+
+        <label for="productPrice">상품 가격</label>
+        <input
+          type="text"
+          id="productPrice"
+          name="productPrice"
+          required
+          onkeyup="formatPrice()"
+        /><br />
+
+        <br />
+
+        <label for="productDescription">상세 내용</label><br />
+        <textarea
+          id="productDescription"
+          name="productDescription"
+          rows="12"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <input id="submitBtn" type="submit" value="등록하기" />
+      </form>
+    </main>
+    <script src="../static/js/reg_items.js"></script>
   </body>
 </html>
