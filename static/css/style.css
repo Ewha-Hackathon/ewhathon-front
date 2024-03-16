@@ -21,7 +21,7 @@
   --radius-3: 1rem;
   --radius-4: 2rem;
 
-  --font-body1: 0.75rem;
+  --font-body1: 1rem;
   --font-body2: 0.6rem;
 
   /* font-size: 20px; */
@@ -57,25 +57,7 @@ a {
 
 ul {
   list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-txt);
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.3rem;
+  padding-left: 2rem;
 }
 
 section {
@@ -97,12 +79,6 @@ section {
 }
 
 /*================================nav bar=================================*/
-
-/* nav {
-  overflow: hidden;
-  border-radius: 2rem;
-} */
-/* nav태그 아래의 div태그들을 수평정렬 및 세로길이 설정 */
 
 nav > div {
   /* 수평정렬, 5개의 button을 각각 25% width만큼 할당 */
@@ -127,4 +103,43 @@ nav > div {
 /* 하단 네비바의 메뉴를 눌렀을 때 색상 변경*/
 .active {
   color: var(--color-green-3);
+}
+
+/* ====================태그=====================*/
+
+.tag {
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  color: var(--color-bg);
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  border-radius: 2rem;
+}
+
+/* ====================버튼=====================*/
+
+.button_container {
+  position: absolute;
+  top: 216px;
+  left: 328px;
+  display: flex;
+}
+
+.oval_button {
+  text-align: center;
+  font-size: 20px;
+  border-radius: 37.5px;
+  border: none;
+
+  height: 60px;
+  background: grey;
+  position: fixed;
+  bottom: 20px;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.like_btn {
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: var(--color-green-2);
 }
