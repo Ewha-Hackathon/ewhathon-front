@@ -1,63 +1,91 @@
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.3rem;
-  margin-bottom: 2.6rem;
+body{
+  background-color:  #ABBC86;
+  margin: 0;
 }
 
-form {
-  width: 50%;
-}
-
-label {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.75rem;
-}
-
-label span:nth-child(2) {
-  color: red;
-}
-
-input {
-  border: none;
-  border-bottom: 1px solid #bababa;
+/*상단바*/
+#signup-top{
+  background-color:  #F7F6F2;
   width: 100%;
-  margin-bottom: 1rem;
-  height: 2rem;
+  height: 220px;
+  /* position:relative; */
 }
 
-input:focus {
-  outline: none;
-  border-bottom: 1px solid #6e6e6e;
+#menu{
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  margin-left:-76px;
+  margin-top:-13px;
 }
 
-.customerInput {
-  padding: 0 1.3rem;
+/*하단*/
+#signup-bottom{
+  margin-top: -40px; /*-마진 값으로 둥근부분 보이도록!!!!*/
+  background-color: #ABBC86;
+  width: 100%;
+  padding-top: 30px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
-.check-comment {
-  visibility: hidden;
+#signup-write{
+  color: #497248;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin:10px;
 }
 
-#idContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+#getInform{
+  display:flex;
+  flex-direction : column;
+  margin: 0px 40px;
 }
 
-#id {
-  display: block;
-  margin: 0 0.75rem 0 auto;
+#getInform > input, button{
+  margin-top: 15px;
+  height: 50px;
 }
 
-#checkIdBtn {
-  font-size: 0.9rem;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-  width: 6rem;
+#getInform > input{
+  border: 1px gray solid;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  height:56px;
+}
+
+#battle-date, #battle-categ{
+  padding-right: 20px;
+}
+
+#getInform > button{
+  border: none;
+  background-color: #497248;
+  border-radius: 15px;
+  color:#FFF7E8;
+  height: 65px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#battle-pwre{
+  margin-bottom: 20px;
+}
+
+#agree{
+  margin-top: 10px;
+  font-size:14px;
+}
+
+button{
+  margin-top: 50px;
+}
+
+#agree > label{
+  font-size: 14px;
+  font-weight: 700;
 }
