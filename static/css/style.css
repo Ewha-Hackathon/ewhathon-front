@@ -114,6 +114,8 @@ nav > div {
   border-color: var(--color-yellow);
   border-radius: 2rem;
   font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /* ====================버튼=====================*/
