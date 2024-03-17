@@ -1,3 +1,7 @@
+* {
+  height: auto;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -53,30 +57,36 @@ input:focus {
   display: none;
 }
 
-#statusWrapper {
-  display: flex;
+.select {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 80vw;
+  gap: 1rem;
 }
-#explain {
-  background-color: none;
-  border: 0.1rem;
+
+.select__item {
+  color: var(--color-yellow);
+  padding: 0.4rem;
+  text-align: center;
+  background-color: var(--color-bg);
   border-style: solid;
   border-color: var(--color-yellow);
-  border-radius: 1rem;
-  overflow: hidden;
-  resize: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  display: table-cell;
 }
 
-#defaultIcon {
-  width: 2rem;
-  height: auto;
+.select__item--selected {
+  background-color: var(--color-yellow);
+  color: var(--color-bg);
 }
 
-select {
-  background: var(--color-bg);
-  color: var(--color-yellow);
-  border: 1px solid var(--color-yellow);
-  border-radius: 1rem;
-  height: 2.5rem;
-  width: 100%;
-  padding: 0.2rem;
+form {
+  margin: 3rem;
+}
+
+h3 {
+  color: var(--color-green-3);
 }

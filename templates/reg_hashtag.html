@@ -27,73 +27,29 @@
         <h1 class="alt-header__title">해시태그 추가</h1>
       </div>
     </header>
+    <form action="submit_url_here" method="post">
+      <select name="reg_hashtag[]" class="custom-select" multiple>
+        <option value="official">신나는</option>
+        <option value="performance">잔잔한</option>
+        <option value="performance">힐링</option>
+        <option value="performance">자극적</option>
+        <option value="performance">비판적</option>
+        <option value="performance">감각적</option>
+        <option value="performance">우아한</option>
+        <option value="performance">창의적</option>
+        <option value="official">혼자도 환영</option>
+        <option value="performance">볼거리 많은</option>
+        <option value="performance">친구와 함께</option>
+        <option value="performance">연합 이벤트</option>
+        <option value="performance">친구 만들기</option>
+        <option value="performance">홍보 행사</option>
+        <option value="performance">현장 예매 가능</option>
+        <option value="performance">시즌 이벤트</option>
+        <option value="performance">외부인 환영</option>
+      </select>
+      <input id="submitBtn" type="submit" value="등록하기" />
+    </form>
 
-    <main>
-      <form action="" method="post" onsubmit="return validateForm()">
-        <label for="title">이름</label>
-        <input type="text" id="title" name="title" required /><br /><br />
-
-        <label for="category">카테고리</label>
-        <select name="category" id="category">
-          <option value="select">카테고리 선택</option>
-          <option value="performance">공연</option>
-          <option value="php">학회</option>
-          <option value="java">전시회</option>
-          <option value="golang">마켓</option>
-          <option value="python">설명회</option>
-          <option value="c#">공식행사</option>
-        </select>
-        <br /><br />
-
-        <label for="host">주최</label>
-        <input type="text" id="host" name="host" required /><br /><br />
-
-        <label for="location">장소</label>
-        <input type="text" id="location" name="location" required /><br /><br />
-
-        <label for="poster"></label>
-        <input
-          type="file"
-          id="poster"
-          name="poster"
-          accept=".jpg, .png"
-          onchange="checkFile()"
-          required
-        />
-        <div id="imageWrapper" onclick="uploadImage()">
-          <img id="defaultIcon" src="../static/assets/camera.svg" />
-          <img id="imagePreview" />
-        </div>
-        <br /><br />
-
-        <label for="ticketPrice">상품 가격</label>
-        <input
-          type="text"
-          id="ticketPrice"
-          name="ticketPrice"
-          required
-          onkeyup="formatPrice()"
-        /><br /><br />
-
-        <label for="startDate">시작일</label>
-        <input type="date" id="startDate" required /><br /><br />
-
-        <label for="endDate">종료일</label>
-        <input type="date" id="endDate" required /><br /><br />
-
-        <label for="explain">상세 내용</label><br />
-        <textarea
-          id="explain"
-          name="explain"
-          rows="12"
-          cols="50"
-          required
-        ></textarea
-        ><br /><br />
-
-        <input id="submitBtn" type="submit" value="등록하기" />
-      </form>
-    </main>
-    <script src="../static/js/reg_posts.js"></script>
+    <script src="../static/js/reg_hashtag.js"></script>
   </body>
 </html>
