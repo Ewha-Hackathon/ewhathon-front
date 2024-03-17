@@ -23,17 +23,3 @@ h2 {
   background: #497248;
   border-radius: 0px 0px 30px 30px;
 }
-
-.popular-wrapper {
-  padding: 2rem;
-  display: flex;
-  overflow: scroll;
-  /* 가로 스크롤 */
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.upcoming-wrapper {
-  padding: 2rem;
-  display: box;
-}
