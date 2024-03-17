@@ -121,6 +121,7 @@ nav > div {
   font-size: 1rem;
   margin-left: 0.1rem;
   margin-right: 0.1rem;
+  text-align: center;
 }
 
 .tag-container {
@@ -132,6 +133,9 @@ nav > div {
 
 .button_container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
 }
 
 .oval_button {
@@ -148,8 +152,20 @@ nav > div {
 }
 
 .like_btn {
-  background: transparent;
+  background-color: var(--color-green-1);
   border: none;
-  font-size: 3rem;
-  color: var(--color-green-2);
+  font-size: 2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  width: 20%;
+  border-radius: 20rem;
+}
+
+.rsvp_btn {
+  background-color: var(--color-green-1);
+  border: none;
+  color: var(--color-green-3);
+  font-size: 2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  width: 70%;
+  border-radius: 20rem;
 }

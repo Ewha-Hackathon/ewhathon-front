@@ -52,9 +52,17 @@ p {
 }
 
 img {
-  height: 23rem;
+  height: 25rem;
 }
 
 .content {
   height: auto;
+}
+
+#like {
+  fill: var(--color-bg);
+}
+
+#like.active {
+  fill: var(--color-green-3);
 }

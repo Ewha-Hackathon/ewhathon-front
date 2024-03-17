@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new post</title>
+
+    <link
+      rel="stylesheet"
+      href="/Users/yunmacbook/Desktop/Buddodum/static/css/style.css"
+    />
+    <link rel="stylesheet" href="../static/css/alt-header.css" />
+    <link rel="stylesheet" href="../static/css/submit_btn.css" />
+    <link rel="stylesheet" href="../static/css/screens/reg_hashtag.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 상단 header -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="#">
+          <i class="fas fa-arrow-left fa-lg" style="color: var(--color-bg)"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">해시태그 추가</h1>
+      </div>
+    </header>
+    <form action="submit_url_here" method="post">
+      <select name="reg_hashtag[]" class="custom-select" multiple>
+        <option value="official">신나는</option>
+        <option value="performance">잔잔한</option>
+        <option value="performance">힐링</option>
+        <option value="performance">자극적</option>
+        <option value="performance">비판적</option>
+        <option value="performance">감각적</option>
+        <option value="performance">우아한</option>
+        <option value="performance">창의적</option>
+        <option value="official">혼자도 환영</option>
+        <option value="performance">볼거리 많은</option>
+        <option value="performance">친구와 함께</option>
+        <option value="performance">연합 이벤트</option>
+        <option value="performance">친구 만들기</option>
+        <option value="performance">홍보 행사</option>
+        <option value="performance">현장 예매 가능</option>
+        <option value="performance">시즌 이벤트</option>
+        <option value="performance">외부인 환영</option>
+      </select>
+      <input id="submitBtn" type="submit" value="등록하기" />
+    </form>
+
+    <script src="../static/js/reg_hashtag.js"></script>
+  </body>
+</html>
