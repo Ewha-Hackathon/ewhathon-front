@@ -7,42 +7,118 @@
       rel="stylesheet"
       href="/Users/yunmacbook/Desktop/Buddodum/static/css/style.css"
     />
-    <link rel="stylesheet" href="../static/css/alt-header.css" />
-    <link rel="stylesheet" href="../static/css/submit_btn.css" />
-    <link rel="stylesheet" href="../static/css/screens/reg_hashtag.css" />
+    <link rel="stylesheet" href="../static/css/screens/home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="../component/part.css" />
+    <link rel="stylesheet" href="../component/part2.css" />
+    <script
+      src="https://kit.fontawesome.com/c817d51768.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-<<<<<<< HEAD
-    <!-- 상단 header -->
-    <header class="alt-header">
-      <div class="alt-header__column">
-        <a href="#">
-          <i
-            class="fas fa-arrow-left fa-lg"
-            style="color: var(--color-bg)"
-            onclick="history.back();"
-          ></i>
-        </a>
-      </div>
-      <div class="alt-header__column">
-        <h1 class="alt-header__title">마이페이지</h1>
-      </div>
-    </header>
+    <div class="top-grn">
+      <h1>
+        안녕하세요 <span style="color: var(--color-yellow)">{userName}</span>!
+      </h1>
 
-    <script src="../static/js/reg_hashtag.js"></script>
-=======
-<<<<<<< HEAD
-    
-=======
+      <br />
+      <br />
+      <h2>현재 인기있는 벗돋움</h2>
 
-    <nav>
-      
-    </nav>
->>>>>>> da1c46410c7d6c410034f91512ccfb45c7b1875b
->>>>>>> refs/remotes/origin/main
+      <div class="popular-wrapper">
+        <div class="part">
+          <img src="../static/assets/example2.jpg" />
+          <div class="part-content">
+            <div>
+              <p>별의 회고록</p>
+              <i class="fa-regular fa-heart fa-xl" style="color: #e7a517"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-calendar fa-sm" style="color: #497248"></i>
+              <p>05.02~09.03</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot" style="color: #497248"></i>
+              <p>이화여대 아산공학관 B1</p>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <img src="../static/assets/example2.jpg" />
+          <div>
+            <div>
+              <p>별의 회고록</p>
+              <i class="fa-regular fa-heart fa-xl" style="color: #e7a517"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-calendar fa-sm" style="color: #497248"></i>
+              <p>05.02~09.03</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot" style="color: #497248"></i>
+              <p>이화여대 아산공학관 B1</p>
+            </div>
+          </div>
+        </div>
+        <div class="part">
+          <img src="../static/assets/example2.jpg" />
+          <div>
+            <div>
+              <p>별의 회고록</p>
+              <i class="fa-regular fa-heart fa-xl" style="color: #e7a517"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-calendar fa-sm" style="color: #497248"></i>
+              <p>05.02~09.03</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot" style="color: #497248"></i>
+              <p>이화여대 아산공학관 B1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <h2 style="color: var(--color-green-3)">다가오는 벗돋움</h2>
+      <div class="upcoming-wrapper">
+        <div class="part2">
+          <img src="../static/assets/example2.jpg" />
+          <div>
+            <p>연극</p>
+            <p>별의 회고록</p>
+            <div>
+              <i class="fa-solid fa-calendar fa-sm" style="color: #497248"></i>
+              <p>05.02~09.03</p>
+            </div>
+            <div class="tag-container">
+              <span class="tag">tag tag</span>
+              <span class="tag">tag</span>
+            </div>
+          </div>
+        </div>
+        <div class="part2">
+          <img src="../static/assets/example2.jpg" />
+          <div>
+            <p>연극</p>
+            <p>별의 회고록</p>
+            <div>
+              <i class="fa-solid fa-calendar fa-sm" style="color: #497248"></i>
+              <p>05.02~09.03</p>
+            </div>
+            <div class="tag-container">
+              <span class="tag">tag tag</span>
+              <span class="tag">tag</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
   </body>
 </html>
