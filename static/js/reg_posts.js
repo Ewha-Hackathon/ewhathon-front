@@ -1,9 +1,9 @@
 function uploadImage() {
-  document.getElementById("productImage").click();
+  document.getElementById("poster").click();
 }
 
 function checkFile() {
-  var fileInput = document.getElementById("productImage");
+  var fileInput = document.getElementById("poster");
   var file = fileInput.files[0];
 
   if (file) {
@@ -36,20 +36,22 @@ function formatPrice() {
 }
 
 function validateForm() {
-  var sellerId = document.getElementById("sellerId").value;
-  var productName = document.getElementById("productName").value;
-  var productImage = document.getElementById("productImage").value;
+  var host = document.getElementById("host").value;
+  var title = document.getElementById("title").value;
+  var poster = document.getElementById("poster").value;
   var productPrice = document.getElementById("productPrice").value;
-  var condition = document.querySelector('input[name="condition"]:checked');
-  var productDescription = document.getElementById("productDescription").value;
+  var explain = document.getElementById("explain").value;
+  var startDate = document.getElementById("startDate").value;
+  var endDate = document.getElementById("endDate").value;
 
   if (
-    !sellerId ||
-    !productName ||
-    !productImage ||
+    !host ||
+    !title ||
+    !poster ||
     !productPrice ||
-    !condition ||
-    !productDescription
+    !explain ||
+    !startDate ||
+    !endDate
   ) {
     alert("모든 정보를 입력해주세요.");
     return false;
