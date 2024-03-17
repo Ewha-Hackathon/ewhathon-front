@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Users/yunmacbook/Desktop/Buddodum/static/css/style.css"
+    />
+    <link rel="stylesheet" href="../static/css/screens/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../component/part.css" />
+    <link rel="stylesheet" href="../component/part2.css" />
+    <script
+      src="https://kit.fontawesome.com/c817d51768.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="./home.html" title="Home" class="nav-item"
+        ><i class="fa fa-home"></i
+      ></a>
+      <a href="./reg_post.html" title="Add" class="nav-item"
+        ><i class="fa fa-plus"></i
+      ></a>
+      <a href="./search.html" title="Search" class="nav-item"
+        ><i class="fa fa-search"></i
+      ></a>
+      <a href="./mypage.html" title="User" class="nav-item"
+        ><i class="fa fa-user"></i
+      ></a>
+    </div>
+
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("nav-placeholder").innerHTML = html;
+        })
+        .catch((err) => {
+          console.warn(err);
+        });
+    </script>
+  </body>
+</html>
