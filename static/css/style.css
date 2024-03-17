@@ -131,9 +131,6 @@ nav > div {
 /* ====================버튼=====================*/
 
 .button_container {
-  position: absolute;
-  top: 216px;
-  left: 328px;
   display: flex;
 }
 
@@ -145,7 +142,7 @@ nav > div {
 
   height: 60px;
   background: grey;
-  position: fixed;
+  
   bottom: 20px;
   /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); */
 }

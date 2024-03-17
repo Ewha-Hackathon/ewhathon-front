@@ -15,21 +15,24 @@
 
     <div id="signup-bottom">
         <div id="signup-write">회원가입</div>
-        <div id="getInform">
-            <input type="text" placeholder="사용 닉네임" required  id="battle-name">
-            <input type="text" placeholder="ID" required  id="battle-id">
-            <input type="password" placeholder="PW" required  id="battle-pw">
-            <input type="password" placeholder="PW 재확인" required  id="battle-pwre">
-            <div id="agree">
-                <label>두 배틀의 이용 약관에 동의합니다.</label>
-                <input type="checkbox" id="agreecheck">
+        <form id="getInform" action="/signup" method="post">
+            <input type="text" id="username" name="username" placeholder="닉네임" required>
+            <input type="email" id="email" name="email" placeholder="이메일 주소" required>
+            <div style="display:flex;" class="check-div">
+                <button type="button" class="check-btn" id="checkEmailBtn" onclick="checkEmail()">이메일 중복 확인</button>
+                <span id="emailResult" class="result-text">gg</span>
             </div>
-            <div id="agree">
-                <label>두 배틀의 개인정보 이용 방침에 동의합니다.</label>
-                <input type="checkbox" id="agreecheck">
+            <input type="password" id="password" name="password" placeholder="비밀번호" required>
+            <div class="agree">
+                <label>벗돋움의 이용 약관에 동의합니다.</label>
+                <input type="checkbox" required>
             </div>
-            <button>배틀 시작!</button>
-        </div>
+            <div class="agree">
+                <label>벗돋움의 개인정보 이용 방침에 동의합니다.</label>
+                <input type="checkbox" required>
+            </div>
+            <input type="submit" id="submit" value="회원가입">
+        </form>
     </div>
 </body>
 </html>

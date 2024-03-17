@@ -27,6 +27,7 @@
     border-radius: 10px;
     padding-left: 20px;
     font-size: 15px;
+    background-color: #FFFFFF;
 }
 
 #login > input:nth-child(2){
