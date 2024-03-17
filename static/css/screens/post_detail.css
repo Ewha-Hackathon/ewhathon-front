@@ -10,6 +10,7 @@
   z-index: 1;
 
   overflow-y: auto;
+
 }
 
 h1 {
@@ -35,19 +36,19 @@ p {
 }
 
 .li-location {
-  list-style-image: url("/Users/yunmacbook/Desktop/Buddodum/static/assets/location.svg");
+  list-style-image: url("../../assets/location.svg");
 }
 
 .li-time {
-  list-style-image: url("/Users/yunmacbook/Desktop/Buddodum/static/assets/calender.svg");
+  list-style-image: url("../../assets/calender.svg");
 }
 
 .li-host {
-  list-style-image: url("/Users/yunmacbook/Desktop/Buddodum/static/assets/hoste.svg");
+  list-style-image: url("../../assets/hoste.svg");
 }
 
 .li-price {
-  list-style-image: url("/Users/yunmacbook/Desktop/Buddodum/static/assets/price.svg");
+  list-style-image: url("../../assets/price.svg");
 }
 
 img {
