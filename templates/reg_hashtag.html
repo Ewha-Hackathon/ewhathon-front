@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new post</title>
+
+    <link
+      rel="stylesheet"
+      href="/Users/yunmacbook/Desktop/Buddodum/static/css/style.css"
+    />
+    <link rel="stylesheet" href="../static/css/alt-header.css" />
+    <link rel="stylesheet" href="../static/css/submit_btn.css" />
+    <link rel="stylesheet" href="../static/css/screens/reg_hashtag.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 상단 header -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="#">
+          <i class="fas fa-arrow-left fa-lg" style="color: var(--color-bg)"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">해시태그 추가</h1>
+      </div>
+    </header>
+
+    <main>
+      <form action="" method="post" onsubmit="return validateForm()">
+        <label for="title">이름</label>
+        <input type="text" id="title" name="title" required /><br /><br />
+
+        <label for="category">카테고리</label>
+        <select name="category" id="category">
+          <option value="select">카테고리 선택</option>
+          <option value="performance">공연</option>
+          <option value="php">학회</option>
+          <option value="java">전시회</option>
+          <option value="golang">마켓</option>
+          <option value="python">설명회</option>
+          <option value="c#">공식행사</option>
+        </select>
+        <br /><br />
+
+        <label for="host">주최</label>
+        <input type="text" id="host" name="host" required /><br /><br />
+
+        <label for="location">장소</label>
+        <input type="text" id="location" name="location" required /><br /><br />
+
+        <label for="poster"></label>
+        <input
+          type="file"
+          id="poster"
+          name="poster"
+          accept=".jpg, .png"
+          onchange="checkFile()"
+          required
+        />
+        <div id="imageWrapper" onclick="uploadImage()">
+          <img id="defaultIcon" src="../static/assets/camera.svg" />
+          <img id="imagePreview" />
+        </div>
+        <br /><br />
+
+        <label for="ticketPrice">상품 가격</label>
+        <input
+          type="text"
+          id="ticketPrice"
+          name="ticketPrice"
+          required
+          onkeyup="formatPrice()"
+        /><br /><br />
+
+        <label for="startDate">시작일</label>
+        <input type="date" id="startDate" required /><br /><br />
+
+        <label for="endDate">종료일</label>
+        <input type="date" id="endDate" required /><br /><br />
+
+        <label for="explain">상세 내용</label><br />
+        <textarea
+          id="explain"
+          name="explain"
+          rows="12"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <input id="submitBtn" type="submit" value="등록하기" />
+      </form>
+    </main>
+    <script src="../static/js/reg_posts.js"></script>
+  </body>
+</html>
