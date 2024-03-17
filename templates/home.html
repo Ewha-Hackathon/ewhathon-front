@@ -120,5 +120,19 @@
       </div>
       <br />
     </div>
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+      fetch('nav.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('nav-placeholder').innerHTML = html;
+        })
+        .catch(err => {
+          console.warn(err);
+        });
+    </script>
+
   </body>
 </html>
