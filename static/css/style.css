@@ -168,3 +168,17 @@ nav > div {
   width: 70%;
   border-radius: 20rem;
 }
+
+.horizonal-wrapper {
+  padding: 2rem;
+  display: flex;
+  overflow: scroll;
+  /* 가로 스크롤 */
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.vertical-wrapper {
+  padding: 2rem;
+  display: box;
+}
